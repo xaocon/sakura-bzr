@@ -18,8 +18,10 @@ install=${pkgname}.install
 sha1sums=('SKIP')
 
 pkgver() {
+
 	cd ${srcdir}/${pkgname}
 	bzr revno
+
 }
 
 prepare() {
