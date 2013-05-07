@@ -1,4 +1,4 @@
-# Maintainer: Evan Pitstick <nerdx00 NOSPAM gmail AT com>
+# Maintainer: Evan Pitstick <nerdx00 NOSPAM gmail DOT com>
 # Based on: https://www.archlinux.org/packages/community/x86_64/sakura/
 
 pkgname=sakura-bzr
@@ -42,7 +42,7 @@ package() {
 		${pkgdir}/usr/share/doc/${pkgname%-bzr}/INSTALL
 	rm ${pkgdir}/usr/share/doc/${pkgname%-bzr}/INSTALL
 	
-	find "$pkgdir" -type d -name .bzr -exec rm -r '{}' +
+	find "${pkgdir}" -type d -name .bzr -exec rm -r '{}' +
 }
 
 # vim: ts=4 sts=4 sw=4 noet
