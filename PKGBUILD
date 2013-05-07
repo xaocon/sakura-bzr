@@ -52,9 +52,6 @@ package() {
 		${pkgdir}/usr/share/doc/${_name}/INSTALL
 	rm ${pkgdir}/usr/share/doc/${_name}/INSTALL
 	
-	# doesn't seem to be needed but added as noted in VCS PKGBUILD Guidelines
-	find "${pkgdir}" -type d -name .bzr -exec rm -r '{}' +
-
 }
 
 # vim: ts=4 sts=4 sw=4 noet
