@@ -43,6 +43,7 @@ package() {
 		${pkgdir}/usr/share/doc/${pkgname%-bzr}/INSTALL
 	rm ${pkgdir}/usr/share/doc/${pkgname%-bzr}/INSTALL
 	
+	# doesn't seem to be needed but added as noted in VCS PKGBUILD Guidelines
 	find "${pkgdir}" -type d -name .bzr -exec rm -r '{}' +
 }
 
