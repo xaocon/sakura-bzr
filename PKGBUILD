@@ -25,7 +25,8 @@ build() {
 	cd ${srcdir}/${pkgname}
 
 	# Set default font size a bit smaller
-	sed -i 's|#define DEFAULT_FONT "Bitstream Vera Sans Mono 14"|#define DEFAULT_FONT "Bitstream Vera Sans Mono 10"|g' src/sakura.c
+	sed -i 's|#define DEFAULT_FONT "Bitstream Vera Sans Mono 14"|#define DEFAULT_FONT "Bitstream Vera Sans Mono 10"|g' \
+		src/sakura.c
  
 	# build & install	
 	cmake -DCMAKE_INSTALL_PREFIX=/usr . 
